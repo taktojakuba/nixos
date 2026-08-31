@@ -10,7 +10,8 @@
 	networking.networkmanager.enable = true;
 	time.timeZone = "Europe/Warsaw";
 	services.xserver = {
-		enable = true;
+		enable = false;
+    displayManager.lightdm.enable = false;
 	};
 	services.pipewire = {
 		enable = true;
@@ -56,7 +57,7 @@
 		enable = true;
 		settings = {
 			default_session = {
-			command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd dwl";
+			command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd /home/kuba/dwl/scripts/launch.sh";
 			user = "greeter";
     			};
   		};
