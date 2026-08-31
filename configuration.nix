@@ -1,0 +1,139 @@
+{ config, lib, pkgs, ... }:
+
+{
+	imports = [
+		./hardware-configuration.nix
+	];
+	boot.loader.systemd-boot.enable = true;
+	boot.loader.efi.canTouchEfiVariables = true;
+	networking.hostName = "nixxerbook";
+	networking.networkmanager.enable = true;
+	time.timeZone = "Europe/Warsaw";
+	services.xserver = {
+		enable = true;
+	};
+	services.pipewire = {
+		enable = true;
+		pulse.enable = true;
+	};
+	services.libinput.enable = true;
+
+	users.users.kuba = {
+		isNormalUser = true;
+		extraGroups = [ "wheel" "seat" "networkmanager" ];
+		shell = pkgs.zsh;
+		packages = with pkgs; [
+			tree
+		];
+	};
+
+	programs.firefox.enable = true;
+	programs.zsh = {
+		enable = true;
+		enableCompletion = true;
+		vteIntegration = true;
+	};
+
+	xdg.portal = {
+		enable = true;
+		extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-wlr ];
+		config.common.default = [ "gtk" "wlr" ];
+	};
+
+	fonts.packages = with pkgs; [
+		(nerd-fonts.jetbrains-mono)
+		nerd-fonts.fira-code
+		cascadia-code
+		fira-code
+		jetbrains-mono
+		dejavu_fonts
+		liberation_ttf
+		cantarell-fonts
+		noto-fonts
+		adwaita-fonts
+	];
+	services.greetd = {
+		enable = true;
+		settings = {
+			default_session = {
+			command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd dwl";
+			user = "greeter";
+    			};
+  		};
+	};
+	environment.systemPackages = with pkgs; [
+		vim
+		wget
+		neovim
+		foot
+		btop
+		git
+		fastfetch
+		ripgrep
+		fd
+		tree-sitter
+		stylua
+		prettier
+		clang-tools
+		lua-language-server
+		pyright
+		ruff
+		marksman
+		yaml-language-server
+		gcc
+		clang
+		binutils
+		gdb
+		cmake
+		ninja
+		gnumake
+		autoconf
+		automake
+		pkg-config
+		zig
+		rustc
+		cargo
+		go
+		nodejs
+		python3
+		gh
+		just
+		jq
+		yq
+		rsync
+		unzip
+		zip
+		p7zip
+		zsh
+		starship
+		tmux
+		yazi
+		mako
+		rofi
+		wl-clipboard
+		wl-clip-persist
+		cliphist
+		grim
+		slurp
+		wf-recorder
+		wlr-randr
+		playerctl
+		libnotify
+		ironbar
+		wayland
+		wayland-protocols
+		wlroots
+		libinput
+		libxkbcommon
+		pixman
+		libdrm
+		libxcb
+		xwayland
+		xkbcomp
+		meson
+	];
+
+	services.openssh.enable = true;
+	system.stateVersion = "26.05";
+}
+
