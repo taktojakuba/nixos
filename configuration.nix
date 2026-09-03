@@ -63,6 +63,7 @@
   		};
 	};
 	environment.systemPackages = with pkgs; [
+    tor-browser 
 		vim
 		wget
 		neovim
