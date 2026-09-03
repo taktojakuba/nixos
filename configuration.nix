@@ -89,9 +89,11 @@
 		ninja
 		gnumake
 		autoconf
+    brightnessctl
 		automake
 		pkg-config
 		zig
+    jdk
 		rustc
 		cargo
 		go
