@@ -65,7 +65,6 @@
   		};
 	};
 	environment.systemPackages = with pkgs; [
-		dwl
     tor-browser 
 		vim
 		wget
