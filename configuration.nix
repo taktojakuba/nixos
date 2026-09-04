@@ -5,9 +5,7 @@
 		/etc/nixos/hardware-configuration.nix
 	];
 
-	nixpkgs.overlays = [
-		(import ./dwl.nix)
-	];
+
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
 	networking.hostName = "nixxerbook";
