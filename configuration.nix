@@ -71,6 +71,7 @@
     tor-browser 
 		vim
 		wget
+    wbg
 		neovim
 		foot
 		btop
