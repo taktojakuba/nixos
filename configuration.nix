@@ -42,7 +42,10 @@
 		extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-wlr ];
 		config.common.default = [ "gtk" "wlr" ];
 	};
-
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = false;
+  };
 	fonts.packages = with pkgs; [
 		(nerd-fonts.jetbrains-mono)
 		nerd-fonts.fira-code
@@ -76,6 +79,7 @@
 		ripgrep
 		fd
 		tree-sitter
+    bluetuith
 		stylua
 		prettier
 		clang-tools
