@@ -78,6 +78,7 @@
 		git
 		fastfetch
 		ripgrep
+    matugen
 		fd
 		tree-sitter
     bluetuith
