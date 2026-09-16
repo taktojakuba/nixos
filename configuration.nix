@@ -30,7 +30,6 @@
 		];
 	};
 
-	programs.firefox.enable = true;
 	programs.zsh = {
 		enable = true;
 		enableCompletion = true;
@@ -68,8 +67,8 @@
   		};
 	};
 	environment.systemPackages = with pkgs; [
-    tor-browser 
-		vim
+		qutebrowser
+    vim
 		wget
     wbg
 		neovim
