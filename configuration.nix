@@ -61,13 +61,14 @@
 		enable = true;
 		settings = {
 			default_session = {
-			command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd /home/kuba/dwl/scripts/launch.sh";
+			command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd /home/kuba/dwl/scripts/launch.sh";
 			user = "greeter";
     			};
   		};
 	};
 	environment.systemPackages = with pkgs; [
 		qutebrowser
+    bitwarden-cli
     vim
 		wget
     wbg
