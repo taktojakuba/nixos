@@ -11,12 +11,15 @@ pkgs.mkShell {
 		wayland
 		wayland-protocols
 		wayland-scanner
+		xwayland
 		wlroots'
 		libinput
 		libxkbcommon
 		pixman
 		libdrm
 		mesa
+		libxcb
+		libxcb-wm
 	];
 
 	shellHook = ''
