@@ -24,7 +24,7 @@
 		libnotify
 		matugen
 		bluetuith
-    spotify
+    spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
     wiremix
 		wbg
 		fzf
