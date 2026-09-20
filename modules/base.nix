@@ -3,7 +3,7 @@
 {
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
-	networking.hostName = "nixxerbook";
+	networking.hostName = "nixasus";
 	networking.networkmanager.enable = true;
 	time.timeZone = "Europe/Warsaw";
 	services.openssh.enable = true;
