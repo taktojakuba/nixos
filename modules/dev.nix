@@ -5,6 +5,7 @@
 		neovim
 		vim
 		git
+    direnv
 		gh
 		ripgrep
 		fd
