@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-	services.docker = {
+	virtualisation.docker = {
 		enable = true;
 	};
 

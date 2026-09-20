@@ -7,5 +7,6 @@
 	networking.networkmanager.enable = true;
 	time.timeZone = "Europe/Warsaw";
 	services.openssh.enable = true;
+	nixpkgs.config.allowUnfree = true;
 	system.stateVersion = "26.05";
 }

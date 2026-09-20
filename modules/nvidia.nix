@@ -9,6 +9,7 @@
 		modesetting.enable = true;
 		powerManagement.enable = true;
 		nvidiaSettings = true;
+		open = true;
 		prime = {
 			offload.enable = true;
 			intelBusId = "PCI:0:2:0";
