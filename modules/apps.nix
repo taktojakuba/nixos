@@ -4,6 +4,7 @@
 	environment.systemPackages = with pkgs; [
 		qutebrowser
     firefox
+    pywalfox-native
     vesktop
 		bitwarden-cli
 		wget
@@ -23,6 +24,8 @@
 		libnotify
 		matugen
 		bluetuith
+    spotify
+    wiremix
 		wbg
 		fzf
 	];

@@ -38,6 +38,5 @@
 		ruff
 		marksman
 		yaml-language-server
-		opencode
 	];
 }
