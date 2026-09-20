@@ -3,6 +3,8 @@
 {
 	environment.systemPackages = with pkgs; [
 		qutebrowser
+    firefox
+    vesktop
 		bitwarden-cli
 		wget
 		rsync
