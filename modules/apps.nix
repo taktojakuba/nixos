@@ -1,4 +1,4 @@
-{ config, lib, pkgs, spotifast, ... }:
+{ config, lib, pkgs, ... }:
 
 {
 	environment.systemPackages = with pkgs; [
@@ -24,7 +24,7 @@
 		libnotify
 		matugen
 		bluetuith
-    spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
+    spotify
     wiremix
 		wbg
 		fzf
