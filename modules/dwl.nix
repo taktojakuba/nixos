@@ -9,8 +9,8 @@
 			src = pkgs.fetchFromGitHub {
 				owner = "taktojakuba";
 				repo = "dwl";
-				rev = "4e54d2cc3e421fb4f294b7586546a4f6c32e6630";
-				hash = "sha256-Mna51r8OsCwoliG5a8laLFTgV8x+XmEuMWcBfodSwQs=";
+				rev = "e1a6693138097b2ab28559948434a6b636741d07";
+				hash = "sha256-b3pmE8I87M8nkJ51KHFtLKdZ8vDf1AMaRrlx/vtcGJg=";
 			};
 			postPatch = ''
 				sed -i 's/caps2super:super/caps:super/' config.def.h

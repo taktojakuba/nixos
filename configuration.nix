@@ -5,7 +5,6 @@
 		./hardware-configuration.nix
 		./modules/base.nix
 		./modules/hardware.nix
-    ./modules/keyboard.nix
 		./modules/nvidia.nix
 		./modules/display.nix
 		./modules/fonts.nix
