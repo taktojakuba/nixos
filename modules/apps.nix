@@ -18,6 +18,9 @@
 		fastfetch
 		tmux
 		yazi
+    mpv 
+    imv
+    zathura
 		zsh
 		starship
 		playerctl

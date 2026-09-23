@@ -3,6 +3,7 @@
 {
 	environment.systemPackages = with pkgs; [
 		gtk3
+    adw-gtk3
 		gtk4
 		libadwaita
 		gtkmm3
