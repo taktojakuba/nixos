@@ -4,7 +4,7 @@
 	programs.dwl = {
 		enable = true;
 		package = (pkgs.dwl.override {
-			wlroots_0_19 = pkgs.wlroots_0_20;
+			wlroots_0_20 = pkgs.wlroots_0_20;
 		}).overrideAttrs {
 			src = pkgs.fetchFromGitHub {
 				owner = "taktojakuba";
