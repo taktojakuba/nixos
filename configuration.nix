@@ -3,6 +3,7 @@
 {
 	imports = [
 		./hardware-configuration.nix
+    ./modules/bootloader.nix
 		./modules/base.nix
 		./modules/hardware.nix
 		./modules/nvidia.nix
