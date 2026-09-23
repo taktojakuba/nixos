@@ -29,7 +29,7 @@ in
 		settings = {
 			default_session = {
 				command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd ${dwlLaunch}/bin/dwl-launch";
-				user = "greeter";
+				user = "kuba";
 			};
 		};
 	};
