@@ -12,14 +12,6 @@
     colorScheme = "dark";
   };
   home.stateVersion = "26.05";
-
-  home.packages = with pkgs; [
-    adw-gtk3
-    zathura
-    mpv
-    imv
-  ];
-
   xdg.mimeApps = {
     enable = true;
     defaultApplications =
