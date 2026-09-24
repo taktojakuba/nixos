@@ -1,8 +1,9 @@
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
   home.username = "kuba";
   home.homeDirectory = "/home/kuba";
+
   home.sessionVariables = {
     EDITOR = "nvim";
   };
