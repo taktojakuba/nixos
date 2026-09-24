@@ -13,7 +13,6 @@
 		./modules/dev.nix
 		./modules/docker.nix
 		./modules/apps.nix
-		./modules/dwl.nix
 		./modules/games.nix
 		./modules/gtk.nix
 		./modules/wm.nix
