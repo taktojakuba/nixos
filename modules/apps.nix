@@ -2,7 +2,6 @@
 
 {
 	environment.systemPackages = with pkgs; [
-		qutebrowser
     firefox
     pywalfox-native
     vesktop
