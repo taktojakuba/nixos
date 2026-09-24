@@ -30,6 +30,7 @@
     wiremix
 		wbg
 		fzf
+    cava
 	];
   programs.nh = {
     enable = true;
