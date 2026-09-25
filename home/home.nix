@@ -1,5 +1,8 @@
 { config, pkgs, ...}: {
-  imports = [ ../apps/zsh.nix ];
+  imports = [
+    ./zsh.nix
+    ./foot.nix
+  ];
 
   home = {
     username = "kuba";

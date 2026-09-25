@@ -4,7 +4,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "direnv" "docker" ];
-      theme = "minimal";
+      theme = "robbyrussell";
     };
     initContent = "
       cs() { cd \"$@\" && ls; }
@@ -26,7 +26,7 @@
       mkdir="mkdir -p";
       cd="cs";
       gpp="g++";
-      ls="ls -ah --color=always --group-directories-first";
+      ls="ls -Alh --color=always --group-directories-first";
       opencode="nix run nixpkgs#opencode --extra-experimental-features nix-command --extra-experimental-features flakes";
     };
   };
