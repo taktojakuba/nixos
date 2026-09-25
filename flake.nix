@@ -8,7 +8,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = { nixpkgs, ...}: {
-    nixossConfiguration.nixasus = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nixasus = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [ ./configuration.nix ];
     };
