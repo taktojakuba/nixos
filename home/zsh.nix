@@ -4,7 +4,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "direnv" "docker" ];
-      theme = "robbyrussell";
+      theme = "minimal";
     };
     initContent = "
       cs() { cd \"$@\" && ls; }
