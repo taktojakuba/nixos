@@ -10,4 +10,11 @@
       rebuild = "sudo nixos-rebuild switch";
     };
   };
+  programs.zsh = {
+    enable = true;
+    shellAliases = {
+      rebuild-home = "nh home switch";
+      rebuild = "nh os switch";
+    };
+  };
 }
