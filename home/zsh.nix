@@ -2,7 +2,7 @@
   programs.zsh = {
     enable = true;
     oh-my-zsh = {
-      enable = true;
+      enable = false;
       plugins = [ "direnv" "docker" ];
       theme = "minimal";
     };
