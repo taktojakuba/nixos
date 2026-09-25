@@ -21,7 +21,6 @@
     imv
     zathura
 		zsh
-		starship
 		playerctl
 		libnotify
 		matugen
