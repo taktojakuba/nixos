@@ -5,6 +5,7 @@
     oh-my-zsh.enable = false;
 
     initContent = ''
+      jf
       cs() {
         builtin cd "$@" && ls
       }

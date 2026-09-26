@@ -2,6 +2,7 @@
   imports = [
     ./zsh.nix
     ./foot.nix
+    ./cava.nix
   ];
 
   home = {
