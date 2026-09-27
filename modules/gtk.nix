@@ -9,6 +9,7 @@
 		gtkmm3
 		gtkmm4
 		glib
+		dconf
 		gobject-introspection
 		gsettings-desktop-schemas
 		desktop-file-utils

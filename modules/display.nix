@@ -1,15 +1,5 @@
 { config, lib, pkgs, ... }:
 
-let
-	dwlLaunch = pkgs.writeShellScriptBin "dwl-launch" ''
-		export XCURSOR_THEME=Future-dark-cursors
-		export XCURSOR_SIZE=24
-		export XDG_CURRENT_DESKTOP=dwl:wlroots
-		export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
-		export WLR_RENDERER=gles2
-		exec ${config.programs.dwl.package}/bin/dwl -s /home/kuba/dwl/scripts/autostart.sh
-	'';
-in
 {
 	services.xserver = {
 		enable = false;
