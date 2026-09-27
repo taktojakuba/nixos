@@ -5,11 +5,11 @@
     ./cava.nix
     ./btop.nix
     ./dunst.nix
-    ./rofi.nix
     ./tmux.nix
     ./yazi.nix
     ./vesktop.nix
     ./nvim.nix
+    ./justbar.nix
     ./stylix.nix
   ];
 

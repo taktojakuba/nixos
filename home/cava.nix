@@ -1,11 +1,12 @@
-{ config, pkgs, ... }: {
+{ config, ... }:
+{
   programs.cava.enable = true;
   programs.cava.settings = {
     general = {
       framerate = 24;
       sensitivity = 60;
-      autosens = 2; # 1 - normal/2 - aggresive/ 0 - off
-      bars = 0; # 0 = auto, fills terminal width and re-fits on resize
+      autosens = 2;
+      bars = 0;
       bar_spacing = 3;
       lower_cutoff_freq = 60;
       higher_cutoff_freq = 10000;
@@ -17,7 +18,7 @@
     };
     color = {
       background = "'default'";
-      foreground = "'#b3b3b3'";
+      foreground = "'${config.lib.stylix.colors.withHashtag.base05}'";
     };
     output = {
       method = "ncurses";

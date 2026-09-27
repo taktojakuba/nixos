@@ -3,24 +3,25 @@
   stylix = {
     enable = true;
     autoEnable = true;
+    targets.rofi.enable = false;
 
     base16Scheme = {
-      base00 = "111111";
-      base01 = "181818";
-      base02 = "2c2c2c";
-      base03 = "444444";
-      base04 = "666666";
-      base05 = "ececec";
-      base06 = "ececec";
-      base07 = "ececec";
-      base08 = "d9d9d9";
-      base09 = "cccccc";
-      base0A = "d1d1d1";
-      base0B = "b3b3b3";
-      base0C = "9e9e9e";
-      base0D = "b3b3b3";
-      base0E = "999999";
-      base0F = "8a8a8a";
+      base00 = "0d0d0d";
+      base01 = "1a1a1a";
+      base02 = "262626";
+      base03 = "404040";
+      base04 = "595959";
+      base05 = "d9d9d9";
+      base06 = "e6e6e6";
+      base07 = "f2f2f2";
+      base08 = "808080";
+      base09 = "8c8c8c";
+      base0A = "999999";
+      base0B = "a6a6a6";
+      base0C = "b3b3b3";
+      base0D = "bfbfbf";
+      base0E = "cccccc";
+      base0F = "d9d9d9";
     };
     polarity = "dark";
 
