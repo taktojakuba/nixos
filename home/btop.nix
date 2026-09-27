@@ -2,7 +2,7 @@
   programs.btop = {
     enable = true;
     settings = {
-      theme_background = true;
+      theme_background = false;
       truecolor = true;
       force_tty = false;
       disable_presets = "Off";
