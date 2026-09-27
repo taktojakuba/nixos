@@ -4,7 +4,7 @@
     enable = true;
     autoEnable = true;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/greyscale-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/grayscale-dark.yaml";
     polarity = "dark";
 
     fonts = {

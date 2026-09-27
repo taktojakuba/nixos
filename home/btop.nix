@@ -2,7 +2,6 @@
   programs.btop = {
     enable = true;
     settings = {
-      color_theme = "matugen";
       theme_background = true;
       truecolor = true;
       force_tty = false;

@@ -8,6 +8,7 @@
     ./rofi.nix
     ./tmux.nix
     ./yazi.nix
+    ./stylix.nix
   ];
 
   home = {

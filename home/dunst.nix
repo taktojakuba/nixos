@@ -1,9 +1,11 @@
+{ lib, ... }:
 {
+  systemd.user.services.dunst.Service.Environment = lib.mkForce [ "DISPLAY=:0" ];
+
   services.dunst = {
     enable = true;
     settings = {
       global = {
-        font = "mono 12";
         border-size = 1;
         border-radius = 0;
 
