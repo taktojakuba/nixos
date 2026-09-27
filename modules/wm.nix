@@ -2,7 +2,7 @@
 
 {
 	environment.systemPackages = with pkgs; [
-		dunst
+		mako
 		rofi
 		wl-clipboard
 		wl-clip-persist

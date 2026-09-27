@@ -3,7 +3,6 @@
 {
 	environment.systemPackages = with pkgs; [
     firefox
-    pywalfox-native
     vesktop
 		bitwarden-cli
 		wget

@@ -4,7 +4,6 @@
     ./foot.nix
     ./cava.nix
     ./btop.nix
-    ./dunst.nix
     ./tmux.nix
     ./yazi.nix
     ./vesktop.nix
