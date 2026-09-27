@@ -8,6 +8,8 @@
     ./rofi.nix
     ./tmux.nix
     ./yazi.nix
+    ./vesktop.nix
+    ./nvim.nix
     ./stylix.nix
   ];
 
