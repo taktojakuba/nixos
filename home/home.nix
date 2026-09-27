@@ -2,14 +2,8 @@
   imports = [
     ./zsh.nix
     ./foot.nix
-    ./cava.nix
-    ./btop.nix
-    ./tmux.nix
-    ./yazi.nix
-    ./vesktop.nix
-    ./nvim.nix
-    ./justbar.nix
     ./stylix.nix
+    ./cava.nix
   ];
 
   home = {

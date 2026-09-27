@@ -3,7 +3,8 @@
   stylix = {
     enable = true;
     autoEnable = true;
-    targets.rofi.enable = false;
+    targets.foot.enable = false;
+    targets.cava.enable = false;
 
     base16Scheme = {
       base00 = "0d0d0d";
@@ -49,7 +50,7 @@
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic";
-      size = 24;
+      size = 16;
     };
   };
 }
