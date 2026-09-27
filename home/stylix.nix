@@ -4,7 +4,24 @@
     enable = true;
     autoEnable = true;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/grayscale-dark.yaml";
+    base16Scheme = {
+      base00 = "111111";
+      base01 = "181818";
+      base02 = "2c2c2c";
+      base03 = "444444";
+      base04 = "666666";
+      base05 = "ececec";
+      base06 = "ececec";
+      base07 = "ececec";
+      base08 = "d9d9d9";
+      base09 = "cccccc";
+      base0A = "d1d1d1";
+      base0B = "b3b3b3";
+      base0C = "9e9e9e";
+      base0D = "b3b3b3";
+      base0E = "999999";
+      base0F = "8a8a8a";
+    };
     polarity = "dark";
 
     fonts = {
