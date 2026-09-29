@@ -1,10 +1,9 @@
 { config, pkgs, ... }: {
-  programs.zsh = {
+  programs.bash = {
     enable = true;
+    enableCompletion = true;
 
-    oh-my-zsh.enable = false;
-
-    initContent = ''
+    initExtra = ''
       jf
       cs() {
         builtin cd "$@" && ls

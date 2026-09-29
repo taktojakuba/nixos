@@ -4,7 +4,7 @@
 	users.users.kuba = {
 		isNormalUser = true;
 		extraGroups = [ "wheel" "seat" "networkmanager" "docker" ];
-		shell = pkgs.zsh;
+		shell = pkgs.bash;
 		packages = with pkgs; [
 			tree
 		];
@@ -29,9 +29,8 @@
 		});
 	'';
 
-	programs.zsh = {
-		enable = true;
-		enableCompletion = true;
+	programs.bash = {
+		completion.enable = true;
 		vteIntegration = true;
 	};
 }

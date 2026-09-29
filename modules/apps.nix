@@ -3,6 +3,7 @@
 {
 	environment.systemPackages = with pkgs; [
     firefox
+    qutebrowser
     vesktop
 		bitwarden-cli
 		wget
@@ -19,7 +20,6 @@
     mpv 
     imv
     zathura
-		zsh
 		playerctl
 		libnotify
 		matugen
@@ -29,6 +29,8 @@
 		wbg
 		fzf
     cava
+    jetbrains.webstorm
+    jetbrains.idea
 	];
   programs.nh = {
     enable = true;

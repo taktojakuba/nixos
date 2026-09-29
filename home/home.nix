@@ -1,6 +1,6 @@
 { config, pkgs, ...}: {
   imports = [
-    ./zsh.nix
+    ./bash.nix
     ./foot.nix
     ./stylix.nix
     ./cava.nix
