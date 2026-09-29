@@ -4,6 +4,7 @@
     enableCompletion = true;
 
     initExtra = ''
+      PS1='\[\e[97m\]\u@\h:\w\$ \[\e[0m\]'
       jf
       cs() {
         builtin cd "$@" && ls
