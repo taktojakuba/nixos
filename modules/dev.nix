@@ -1,43 +1,48 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-	environment.systemPackages = with pkgs; [
-		neovim
-		vim
-		git
+  environment.systemPackages = with pkgs; [
+    autoconf
+    automake
+    binutils
+    cargo
+    clang
+    clang-tools
+    cmake
     direnv
-		gh
-		ripgrep
-		fd
-		tree-sitter
-		just
-		jq
-		yq
-		meson
-		cmake
-		ninja
-		gnumake
-		autoconf
-		automake
-		pkg-config
-		gcc
-		clang
-		clang-tools
-		binutils
-		gdb
-		zig
-		jdk
-		rustc
-		cargo
-		go
-		nodejs
-		python3
-		prettier
-		stylua
-		lua-language-server
-		pyright
-		ruff
-		marksman
-		yaml-language-server
-	];
+    fd
+    gcc
+    gdb
+    gh
+    git
+    gnumake
+    go
+    jdk
+    jq
+    just
+    lua-language-server
+    marksman
+    meson
+    neovim
+    ninja
+    nodejs
+    pkg-config
+    prettier
+    pyright
+    python3
+    ripgrep
+    ruff
+    rustc
+    stylua
+    tree-sitter
+    vim
+    yaml-language-server
+    yq
+    zig
+  ];
 }

@@ -1,38 +1,44 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-	environment.systemPackages = with pkgs; [
-    firefox
-    qutebrowser
-    vesktop
-		bitwarden-cli
-		wget
-		rsync
-		unzip
-		zip
-		p7zip
-		brightnessctl
-		foot
-		btop
-		fastfetch
-		tmux
-		yazi
-    mpv 
-    imv
-    zathura
-		playerctl
-		libnotify
-		matugen
-		bluetuith
-    spotify
-    wiremix
-		wbg
-		fzf
-    cava
-    jetbrains.webstorm
-    jetbrains.idea
+  environment.systemPackages = with pkgs; [
     bambu-studio
-	];
+    bitwarden-cli
+    bluetuith
+    brightnessctl
+    btop
+    cava
+    fastfetch
+    firefox
+    foot
+    fzf
+    imv
+    jetbrains.idea
+    jetbrains.webstorm
+    libnotify
+    matugen
+    mpv
+    p7zip
+    playerctl
+    qutebrowser
+    rsync
+    spotify
+    tmux
+    unzip
+    vesktop
+    wbg
+    wget
+    wiremix
+    yazi
+    zathura
+    zip
+  ];
+
   programs.nh = {
     enable = true;
     clean.enable = true;

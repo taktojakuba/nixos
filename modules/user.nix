@@ -1,36 +1,43 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-	users.users.kuba = {
-		isNormalUser = true;
-		extraGroups = [ "wheel" "seat" "networkmanager" "docker" ];
-		shell = pkgs.bash;
-		packages = with pkgs; [
-			tree
-		];
-	};
+  users.users.kuba = {
+    isNormalUser = true;
+    extraGroups = [
+      "wheel"
+      "seat"
+      "networkmanager"
+      "docker"
+    ];
+    shell = pkgs.bash;
+  };
 
-	security.polkit.extraConfig = ''
-		polkit.addRule(function(action, subject) {
-			if (
-				subject.user == "kuba"
-				&& (
-					action.id == "org.freedesktop.login1.power-off"
-					|| action.id == "org.freedesktop.login1.power-off-multiple-sessions"
-					|| action.id == "org.freedesktop.login1.reboot"
-					|| action.id == "org.freedesktop.login1.reboot-multiple-sessions"
-					|| action.id == "org.freedesktop.login1.suspend"
-					|| action.id == "org.freedesktop.login1.suspend-multiple-sessions"
-					|| action.id == "org.freedesktop.login1.halt"
-				)
-			) {
-				return polkit.Result.YES;
-			}
-		});
-	'';
+  security.polkit.extraConfig = ''
+    		polkit.addRule(function(action, subject) {
+    			if (
+    				subject.user == "kuba"
+    				&& (
+    					action.id == "org.freedesktop.login1.power-off"
+    					|| action.id == "org.freedesktop.login1.power-off-multiple-sessions"
+    					|| action.id == "org.freedesktop.login1.reboot"
+    					|| action.id == "org.freedesktop.login1.reboot-multiple-sessions"
+    					|| action.id == "org.freedesktop.login1.suspend"
+    					|| action.id == "org.freedesktop.login1.suspend-multiple-sessions"
+    					|| action.id == "org.freedesktop.login1.halt"
+    				)
+    			) {
+    				return polkit.Result.YES;
+    			}
+    		});
+    	'';
 
-	programs.bash = {
-		completion.enable = true;
-		vteIntegration = true;
-	};
+  programs.bash = {
+    completion.enable = true;
+    vteIntegration = true;
+  };
 }

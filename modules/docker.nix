@@ -1,15 +1,20 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-	virtualisation.docker = {
-		enable = true;
-	};
+  virtualisation.docker = {
+    enable = true;
+  };
 
-	environment.systemPackages = with pkgs; [
-		docker
-		docker-compose
-		minikube
-		kubectl
-		helm
-	];
+  environment.systemPackages = with pkgs; [
+    docker
+    docker-compose
+    helm
+    kubectl
+    minikube
+  ];
 }

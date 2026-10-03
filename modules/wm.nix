@@ -1,25 +1,30 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-	environment.systemPackages = with pkgs; [
-		mako
-		rofi
-		wl-clipboard
-		wl-clip-persist
-		cliphist
-		grim
-		slurp
-		wf-recorder
-		wlr-randr
-		ironbar
-		wayland
-		wayland-protocols
-		wlroots
-		libxkbcommon
-		pixman
-		libdrm
-		libxcb
-		xwayland
-		xkbcomp
-	];
+  environment.systemPackages = with pkgs; [
+    cliphist
+    grim
+    ironbar
+    libdrm
+    libxcb
+    libxkbcommon
+    mako
+    pixman
+    rofi
+    slurp
+    wayland
+    wayland-protocols
+    wf-recorder
+    wl-clip-persist
+    wl-clipboard
+    wlr-randr
+    wlroots
+    xkbcomp
+    xwayland
+  ];
 }

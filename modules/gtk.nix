@@ -1,18 +1,23 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-	environment.systemPackages = with pkgs; [
-		gtk3
+  environment.systemPackages = with pkgs; [
     adw-gtk3
-		gtk4
-		libadwaita
-		gtkmm3
-		gtkmm4
-		glib
-		dconf
-		gobject-introspection
-		gsettings-desktop-schemas
-		desktop-file-utils
-		vala
-	];
+    dconf
+    desktop-file-utils
+    glib
+    gobject-introspection
+    gsettings-desktop-schemas
+    gtk3
+    gtk4
+    gtkmm3
+    gtkmm4
+    libadwaita
+    vala
+  ];
 }
