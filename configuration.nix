@@ -16,5 +16,6 @@
 		./modules/games.nix
 		./modules/gtk.nix
 		./modules/wm.nix
+    ./modules/mango.nix
 	];
 }

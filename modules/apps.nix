@@ -31,6 +31,7 @@
     cava
     jetbrains.webstorm
     jetbrains.idea
+    bambu-studio
 	];
   programs.nh = {
     enable = true;
