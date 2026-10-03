@@ -20,6 +20,7 @@
     imv
     jetbrains.idea
     jetbrains.webstorm
+    vscode
     libnotify
     matugen
     mpv
