@@ -1,0 +1,18 @@
+{
+  imports = [
+    ./apps.nix
+    ./base.nix
+    ./bootloader.nix
+    ./dev.nix
+    ./display.nix
+    ./docker.nix
+    ./fonts.nix
+    ./games.nix
+    ./gtk.nix
+    ./hardware.nix
+    ./mango.nix
+    ./nvidia.nix
+    ./user.nix
+    ./wm.nix
+  ];
+}
