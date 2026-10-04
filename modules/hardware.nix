@@ -10,7 +10,11 @@
   hardware.bluetooth.powerOnBoot = false;
   services.libinput.enable = true;
   services.power-profiles-daemon.enable = true;
-
+  zramSwap.enable = true;
+  services.scx = {
+    enable = true;
+    scheduler = "scx_cosmos";
+  };
   # Games disk (nvme0n1, formatted as ext4, labeled "games")
   fileSystems."/games" = {
     device = "/dev/disk/by-label/games";
