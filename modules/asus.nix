@@ -1,9 +1,7 @@
 { ... }:
 
 {
-  services.asusd = {
-    enable = true;
-    enableUserService = true;
-  };
+  services.asusd.enable = true;
   services.supergfxd.enable = true;
+  services.power-profiles-daemon.enable = true;
 }
