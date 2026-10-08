@@ -7,7 +7,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    bambu-studio
     bitwarden-cli
     bluetuith
     brightnessctl
@@ -46,4 +45,4 @@
     clean.extraArgs = "--keep-since 4d --keep 3";
     flake = "/home/kuba/nixos"; # sets NH_OS_FLAKE variable for you
   };
-}
+} 

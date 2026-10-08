@@ -10,6 +10,7 @@
   hardware.bluetooth.powerOnBoot = false;
   services.libinput.enable = true;
   services.power-profiles-daemon.enable = true;
+  hardware.opentabletdriver.enable = true;
   zramSwap.enable = true;
   services.scx = {
     enable = true;

@@ -24,5 +24,7 @@
     wine
     wine-staging
     winetricks
+    protonplus
+    osu-lazer
   ];
 }

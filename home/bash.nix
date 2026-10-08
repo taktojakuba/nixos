@@ -7,7 +7,7 @@
       PS1='\[\e[97m\]\u@\h:\w\$ \[\e[0m\]'
       jf
       cs() {
-        builtin cd "$@" && ls
+        z "$@" && ls
       }
 
       memof() {
@@ -40,4 +40,6 @@
       opencode = "nix run nixpkgs#opencode --extra-experimental-features nix-command --extra-experimental-features flakes";
     };
   };
+  programs.zoxide.enable = true;
+  programs.zoxide.enableBashIntegration= true;
 }

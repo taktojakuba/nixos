@@ -9,7 +9,6 @@
   environment.systemPackages = with pkgs; [
     cliphist
     grim
-    ironbar
     libdrm
     libxcb
     libxkbcommon

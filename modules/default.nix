@@ -14,5 +14,6 @@
     ./nvidia.nix
     ./user.nix
     ./wm.nix
+    ./asus.nix
   ];
 }
