@@ -15,5 +15,6 @@
     ./user.nix
     ./wm.nix
     ./asus.nix
+    ./kernel.nix
   ];
 }
