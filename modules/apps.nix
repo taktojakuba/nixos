@@ -37,6 +37,7 @@
     yazi
     zathura
     zip
+    tokei
   ];
 
   programs.nh = {
