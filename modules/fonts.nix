@@ -7,6 +7,10 @@
 
 {
   fonts.packages = with pkgs; [
+    rubik
+    lato
+    overpass
+    fira-sans
     adwaita-fonts
     cantarell-fonts
     cascadia-code
