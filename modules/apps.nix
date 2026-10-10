@@ -35,6 +35,7 @@
     wget
     wiremix
     yazi
+    nautilus
     zathura
     zip
     tokei

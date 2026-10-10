@@ -15,6 +15,9 @@
     extraPackages = with pkgs; [
       gamemode
     ];
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
   };
 
   programs.gamemode.enable = true;

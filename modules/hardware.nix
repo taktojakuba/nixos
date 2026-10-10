@@ -12,6 +12,7 @@
   services.power-profiles-daemon.enable = true;
   hardware.opentabletdriver.enable = true;
   zramSwap.enable = true;
+  zramSwap.memoryPercent = 25;
   services.scx = {
     enable = true;
     scheduler = "scx_cosmos";
