@@ -21,8 +21,6 @@
       rebuild-home = "nh home switch";
       rebuild = "nh os switch";
 
-      vim = "nvim";
-
       ga = "git add .";
       gi = "git init";
       gc = "git commit -m";

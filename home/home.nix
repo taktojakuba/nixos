@@ -3,6 +3,7 @@
     ./bash.nix
     ./stylix.nix
     ./cava.nix
+    ./nixvim.nix
   ];
 
   home = {

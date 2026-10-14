@@ -15,7 +15,6 @@
     clang-tools
     cmake
     direnv
-    fd
     gcc
     gdb
     gh
@@ -25,23 +24,15 @@
     jdk
     jq
     just
-    lua-language-server
-    marksman
     meson
-    neovim
     ninja
     nodejs
     pkg-config
     prettier
-    pyright
     python3
-    ripgrep
     ruff
     rustc
-    stylua
-    tree-sitter
     vim
-    yaml-language-server
     yq
     zig
     libXi
