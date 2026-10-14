@@ -29,7 +29,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd /home/kuba/dwl/scripts/launch";
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd 'jm system launch'";
         user = "kuba";
       };
     };

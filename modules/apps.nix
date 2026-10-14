@@ -39,6 +39,7 @@
     zathura
     zip
     tokei
+    orca-slicer
   ];
 
   programs.nh = {

@@ -28,5 +28,6 @@
     wine-staging
     winetricks
     protonplus
+    modrinth-app
   ];
 }

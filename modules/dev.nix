@@ -44,5 +44,6 @@
     yaml-language-server
     yq
     zig
+    libXi
   ];
 }

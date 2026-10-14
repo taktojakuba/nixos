@@ -10,11 +10,11 @@
   hardware.bluetooth.powerOnBoot = false;
   services.libinput.enable = true;
   services.power-profiles-daemon.enable = true;
-  hardware.opentabletdriver.enable = true;
+  hardware.opentabletdriver.enable = false;
   zramSwap.enable = true;
   zramSwap.memoryPercent = 25;
   services.scx = {
-    enable = true;
+    enable = false;
     scheduler = "scx_cosmos";
   };
   # Games disk (nvme0n1, formatted as ext4, labeled "games")
