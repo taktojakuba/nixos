@@ -430,12 +430,6 @@
       telescope = {
         enable = true;
         keymaps = {
-          "<C-f>" = {
-            action = "live_grep";
-            options = {
-              desc = "Telescope live grep";
-            };
-          };
           "<C-g>" = {
             action = "find_files";
             options = {
@@ -449,6 +443,19 @@
         };
       };
       project-nvim.enable = true;
+
+      toggleterm = {
+        enable = true;
+        settings = {
+          direction = "horizontal";
+          open_mapping = "[[<C-f>]]";
+          float_opts = {
+            border = "curved";
+            width = 130;
+            height = 30;
+          };
+        };
+      };
 
       treesitter = {
         enable = true;

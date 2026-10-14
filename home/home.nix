@@ -1,4 +1,4 @@
-{ config, pkgs, ...}: {
+{ config, pkgs, ... }: {
   imports = [
     ./bash.nix
     ./stylix.nix
