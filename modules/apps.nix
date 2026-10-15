@@ -31,7 +31,6 @@
     tmux
     unzip
     vesktop
-    wbg
     wget
     wiremix
     yazi
@@ -39,7 +38,7 @@
     zathura
     zip
     tokei
-    orca-slicer
+    bambu-studio
   ];
 
   programs.nh = {
@@ -48,4 +47,4 @@
     clean.extraArgs = "--keep-since 4d --keep 3";
     flake = "/home/kuba/nixos"; # sets NH_OS_FLAKE variable for you
   };
-} 
+}

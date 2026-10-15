@@ -25,5 +25,7 @@
     wlroots
     xkbcomp
     xwayland
+    wbg
+    swaybg
   ];
 }
