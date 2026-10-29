@@ -30,7 +30,6 @@
     spotify
     tmux
     unzip
-    vesktop
     wget
     wiremix
     yazi
@@ -38,7 +37,6 @@
     zathura
     zip
     tokei
-    bambu-studio
   ];
 
   programs.nh = {

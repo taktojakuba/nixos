@@ -28,6 +28,6 @@
     wine-staging
     winetricks
     protonplus
-    modrinth-app
+    osu-lazer-bin
   ];
 }

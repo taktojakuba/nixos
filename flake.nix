@@ -14,19 +14,27 @@
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
   };
-  outputs = { nixpkgs, home-manager, stylix, nixvim, ... }: {
-    nixosConfigurations.nixasus = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [ ./configuration.nix ];
-    };
+  outputs =
+    {
+      nixpkgs,
+      home-manager,
+      stylix,
+      nixvim,
+      ...
+    }:
+    {
+      nixosConfigurations.nixasus = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [ ./configuration.nix ];
+      };
 
-    homeConfigurations.kuba = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages."x86_64-linux";
-      modules = [
-        stylix.homeModules.stylix
-        nixvim.homeModules.nixvim
-        ./home/home.nix
-      ];
+      homeConfigurations.kuba = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages."x86_64-linux";
+        modules = [
+          stylix.homeModules.stylix
+          nixvim.homeModules.nixvim
+          ./home/home.nix
+        ];
+      };
     };
-  };
 }

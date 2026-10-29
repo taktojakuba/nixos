@@ -1,12 +1,16 @@
 { pkgs, lib, ... }:
 
 let
-  linux = pkgs.linux_6_12;
+  version = "7.2.11";
 
   baseKernel = pkgs.linuxManualConfig {
     inherit (pkgs) stdenv;
-    inherit (linux) src version;
-    modDirVersion = "${linux.modDirVersion}-weebinux";
+    inherit version;
+    modDirVersion = "${version}-weebinux";
+    src = pkgs.fetchurl {
+      url = "https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-${version}.tar.xz";
+      hash = "sha256-/Q/EefmDqMBTE/E+nDYzD+ZlHPclOWdIxA1c2T+h5qQ=";
+    };
     configfile = ./kernel.config;
     allowImportFromDerivation = true;
   };
@@ -17,6 +21,7 @@ let
 in
 {
   boot.kernelPackages = pkgs.linuxPackagesFor kernel;
+  boot.initrd.includeDefaultModules = false;
+  boot.initrd.allowMissingModules = true;
   hardware.graphics.enable32Bit = true;
 }
-

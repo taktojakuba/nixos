@@ -29,7 +29,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd 'jm system launch'";
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd 'weebwl'";
         user = "kuba";
       };
     };

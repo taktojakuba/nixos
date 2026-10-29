@@ -17,16 +17,6 @@
     enable = false;
     scheduler = "scx_cosmos";
   };
-  # Games disk (nvme0n1, formatted as ext4, labeled "games")
-  fileSystems."/games" = {
-    device = "/dev/disk/by-label/games";
-    fsType = "ext4";
-    options = [
-      "rw"
-      "relatime"
-    ];
-  };
-
   # Second games disk (sda, ext4, labeled "ssdgames")
   fileSystems."/ssd" = {
     device = "/dev/disk/by-label/ssdgames";
@@ -36,10 +26,4 @@
       "relatime"
     ];
   };
-
-  # Make the game disks writable by the user kuba
-  systemd.tmpfiles.rules = [
-    "d /games 0755 kuba users - -"
-    "d /ssd 0755 kuba users - -"
-  ];
 }

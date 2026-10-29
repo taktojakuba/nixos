@@ -26,6 +26,6 @@
     xkbcomp
     xwayland
     wbg
-    swaybg
+    awww
   ];
 }

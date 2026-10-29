@@ -10,7 +10,7 @@
         z "$@" && ls
       }
 
-      memof() {
+      memf() {
         local pid
         pid=$(pidof "$1") || return 1
         awk '/^Pss:/ {printf "%.2f MiB\n", $2/1024}' "/proc/$pid/smaps_rollup"
@@ -39,5 +39,5 @@
     };
   };
   programs.zoxide.enable = true;
-  programs.zoxide.enableBashIntegration= true;
+  programs.zoxide.enableBashIntegration = true;
 }
