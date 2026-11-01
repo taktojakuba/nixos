@@ -35,6 +35,7 @@
     osu-lazer-bin
     modrinth-app
     foot
+    localsend
   ];
 
   programs.nh = {

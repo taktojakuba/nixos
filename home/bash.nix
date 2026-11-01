@@ -21,7 +21,7 @@
       rebuild-home = "nh home switch";
       rebuild = "nh os switch";
 
-      ga = "git add .";
+      ga = "git add -A";
       gi = "git init";
       gc = "git commit -m";
       gp = "git push";
