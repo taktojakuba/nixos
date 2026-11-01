@@ -6,7 +6,7 @@
 }:
 
 {
-  networking.hostName = "nixasus";
+  networking.hostName = "thinknix";
   networking.networkmanager.enable = true;
   time.timeZone = "Europe/Warsaw";
   services.openssh.enable = true;

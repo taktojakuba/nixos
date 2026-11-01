@@ -35,6 +35,5 @@
     vim
     yq
     zig
-    libXi
   ];
 }

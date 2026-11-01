@@ -8,13 +8,9 @@
     ./docker.nix
     ./fonts.nix
     ./games.nix
-    ./gtk.nix
     ./hardware.nix
-    ./mango.nix
-    ./nvidia.nix
+    ./sway.nix
     ./user.nix
-    ./wm.nix
-    ./asus.nix
     ./kernel.nix
   ];
 }

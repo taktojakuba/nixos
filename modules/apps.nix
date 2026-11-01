@@ -14,9 +14,7 @@
     cava
     fastfetch
     firefox
-    foot
     fzf
-    imv
     jetbrains.idea
     jetbrains.webstorm
     vscode
@@ -25,20 +23,18 @@
     mpv
     p7zip
     playerctl
-    qutebrowser
     rsync
     spotify
     tmux
     unzip
-    vesktop
     wget
     wiremix
     yazi
-    nautilus
-    zathura
     zip
     tokei
-    bambu-studio
+    osu-lazer-bin
+    modrinth-app
+    foot
   ];
 
   programs.nh = {
