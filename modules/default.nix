@@ -15,5 +15,6 @@
     ./wm.nix
     ./asus.nix
     ./kernel.nix
+    ./nvf.nix
   ];
 }

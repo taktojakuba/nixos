@@ -1,7 +1,6 @@
 { config, pkgs, ... }: {
   imports = [
     ./bash.nix
-    ./nixvim.nix
   ];
 
   home = {
