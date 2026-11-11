@@ -7,8 +7,8 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    nixvim.url = "github:nix-community/nixvim";
-    nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    nvf.url = "github:notashelf/nvf";
+    nvf.inputs.nixpkgs.follows = "nixpkgs";
 
     bootvine.url = "git+https://codeberg.org/wvhulle/bootvine";
     bootvine.inputs.nixpkgs.follows = "nixpkgs";
@@ -18,8 +18,8 @@
     {
       nixpkgs,
       home-manager,
-      nixvim,
       bootvine,
+      nvf,
       ...
     }:
     {
@@ -27,6 +27,7 @@
         system = "x86_64-linux";
         modules = [
           bootvine.nixosModules.default
+          nvf.nixosModules.default
           ./configuration.nix
         ];
       };
@@ -34,7 +35,6 @@
       homeConfigurations.kuba = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages."x86_64-linux";
         modules = [
-          nixvim.homeModules.nixvim
           ./home/home.nix
         ];
       };

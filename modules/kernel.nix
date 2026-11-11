@@ -1,23 +1,19 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 
 let
-  version = "7.2.11";
+  version = "7.4-rc2";
 
-  baseKernel = pkgs.linuxManualConfig {
+  kernel = pkgs.linuxManualConfig {
     inherit (pkgs) stdenv;
     inherit version;
-    modDirVersion = "${version}-weebinux";
+    modDirVersion = "7.4.0-rc2-weebinux";
     src = pkgs.fetchurl {
-      url = "https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-${version}.tar.xz";
-      hash = "sha256-/Q/EefmDqMBTE/E+nDYzD+ZlHPclOWdIxA1c2T+h5qQ=";
+      url = "https://github.com/torvalds/linux/archive/refs/tags/v${version}.tar.gz";
+      hash = "sha256-AQBj1fx7s6Xx+xFs/0Wr5Jd+ioIFt4QXc1BWgMegFLs=";
     };
     configfile = ./kernel.config;
     allowImportFromDerivation = true;
   };
-
-  kernel = lib.extendDerivation true {
-    features.ia32Emulation = true;
-  } baseKernel;
 in
 {
   boot.kernelPackages = pkgs.linuxPackagesFor kernel;

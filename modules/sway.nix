@@ -7,7 +7,6 @@
 
 {
   programs.sway.enable = true;
-  programs.xwayland.enable = true;
   programs.sway.extraSessionCommands = ''
     export QT_QPA_PLATFORM="wayland;xcb"
     export QT_WAYLAND_DISABLE_WINDOWDECORATION=1

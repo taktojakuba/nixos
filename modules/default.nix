@@ -12,5 +12,6 @@
     ./wm.nix
     ./user.nix
     ./kernel.nix
+    ./nvf.nix
   ];
 }

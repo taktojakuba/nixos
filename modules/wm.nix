@@ -28,7 +28,6 @@
     wl-clip-persist
     wlroots
     xkbcomp
-    xwayland
     wbg
   ];
 }

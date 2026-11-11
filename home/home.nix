@@ -2,7 +2,6 @@
   imports = [
     ./bash.nix
     ./gtk.nix
-    ./nixvim.nix
   ];
 
   home = {
