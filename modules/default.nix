@@ -7,9 +7,9 @@
     ./display.nix
     ./docker.nix
     ./fonts.nix
-    ./games.nix
     ./hardware.nix
     ./sway.nix
+    ./wm.nix
     ./user.nix
     ./kernel.nix
   ];

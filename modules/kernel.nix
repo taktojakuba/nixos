@@ -23,7 +23,6 @@ in
   boot.kernelPackages = pkgs.linuxPackagesFor kernel;
   boot.initrd.includeDefaultModules = false;
   boot.initrd.allowMissingModules = true;
-  hardware.graphics.enable32Bit = true;
   boot.kernelParams = [
     "nvme_core.default_ps_max_latency_us=0"
     "pcie_aspm=off"

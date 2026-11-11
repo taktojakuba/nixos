@@ -36,7 +36,7 @@
       ls = "ls -Alh --color=auto --group-directories-first";
 
       clear = "printf '\\033[H\\033[2J\\033[3J'";
-      opencode = "nix run nixpkgs#opencode --extra-experimental-features nix-command --extra-experimental-features flakes";
+      opencode = "nix run github:aodhanhayter/opencode-flake";
     };
   };
   programs.zoxide.enable = true;

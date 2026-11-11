@@ -6,10 +6,15 @@
 }:
 
 {
-  hardware.enableRedistributableFirmware = true;
 
+  programs.dconf.enable = true;
+  networking.networkmanager.enable = true;
+  services.upower.enable = true;
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  console.keyMap = "us";
+
+  hardware.enableRedistributableFirmware = true;
   hardware.graphics.enable = true;
-  hardware.graphics.enable32Bit = true;
   hardware.graphics.extraPackages = with pkgs; [
     intel-media-driver
   ];

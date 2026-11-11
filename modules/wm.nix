@@ -1,0 +1,34 @@
+{
+  pkgs,
+  ...
+}:
+
+{
+  environment.systemPackages = with pkgs; [
+    cliphist
+    desktop-file-utils
+    gsettings-desktop-schemas
+    noctalia
+    slurp
+    swayimg
+    wf-recorder
+    wl-clipboard
+    wlr-randr
+    grim
+    libdrm
+    libxcb
+    libxkbcommon
+    mako
+    ironbar
+    rofi
+    slurp
+    wayland
+    wayland-protocols
+    wf-recorder
+    wl-clip-persist
+    wlroots
+    xkbcomp
+    xwayland
+    wbg
+  ];
+}
