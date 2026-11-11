@@ -7,7 +7,6 @@
 
 {
 
-  # 64-bit, Wayland-native gaming tools only.
   programs.gamemode.enable = true;
   programs.gamescope.enable = true;
   programs.steam = {

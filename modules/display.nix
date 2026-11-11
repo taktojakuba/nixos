@@ -17,9 +17,6 @@
     pulse.enable = true;
   };
   security.rtkit.enable = true;
-  # The actual portal backends (gtk + wlr, with screencast/screenshot routed
-  # to wlr on sway) are installed by programs.sway; this is the fallback used
-  # when no session-specific portal config matches.
   xdg.portal = {
     enable = true;
     config.common.default = [
@@ -32,7 +29,7 @@
     useTextGreeter = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd 'sway'";
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd 'weebwl'";
         user = "kuba";
       };
     };

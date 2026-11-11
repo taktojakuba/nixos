@@ -36,6 +36,7 @@
     modrinth-app
     foot
     localsend
+    vesktop
   ];
 
   programs.nh = {

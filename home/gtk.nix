@@ -19,14 +19,4 @@
     };
   };
 
-  # Minimalistic cursor theme. Applied to GTK apps here, and exported as
-  # XCURSOR_THEME/XCURSOR_SIZE for Wayland/XWayland clients.
-  home.pointerCursor = {
-    enable = true;
-    name = "Bibata-Modern-Ice";
-    package = pkgs.bibata-cursors;
-    size = 24;
-    gtk.enable = true;
-    x11.enable = false;
-  };
 }

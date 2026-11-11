@@ -448,8 +448,8 @@
         enable = true;
         settings = {
           direction = "horizontal";
-          open_mapping = "[[<C-f>]]";
-          float_opts = {
+          fopen_mapping = "<C-f>";
+          loat_opts = {
             border = "curved";
             width = 130;
             height = 30;
