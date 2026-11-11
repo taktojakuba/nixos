@@ -1,8 +1,6 @@
 { config, pkgs, ... }: {
   imports = [
     ./bash.nix
-    ./stylix.nix
-    ./cava.nix
     ./nixvim.nix
   ];
 
