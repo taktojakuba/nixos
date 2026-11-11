@@ -7,15 +7,13 @@
 
 {
   environment.systemPackages = with pkgs; [
+    sway
+    noctalia
     cliphist
-    grim
     libdrm
     libxcb
     libxkbcommon
-    mako
     pixman
-    rofi
-    slurp
     wayland
     wayland-protocols
     wf-recorder
@@ -25,7 +23,5 @@
     wlroots
     xkbcomp
     xwayland
-    wbg
-    awww
   ];
 }

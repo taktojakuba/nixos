@@ -10,7 +10,6 @@
     ./games.nix
     ./gtk.nix
     ./hardware.nix
-    ./mango.nix
     ./nvidia.nix
     ./user.nix
     ./wm.nix

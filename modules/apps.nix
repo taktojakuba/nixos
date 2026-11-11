@@ -7,33 +7,28 @@
 
 {
   environment.systemPackages = with pkgs; [
-    bitwarden-cli
     bluetuith
     brightnessctl
     btop
     cava
-    fastfetch
     firefox
     foot
     fzf
     imv
-    jetbrains.idea
-    jetbrains.webstorm
     vscode
     libnotify
     matugen
     mpv
     p7zip
     playerctl
-    qutebrowser
     rsync
     spotify
+    vesktop
     tmux
     unzip
     wget
     wiremix
     yazi
-    nautilus
     zathura
     zip
     tokei
