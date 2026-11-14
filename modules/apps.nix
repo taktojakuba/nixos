@@ -33,10 +33,11 @@
     zip
     tokei
     osu-lazer-bin
-    modrinth-app
     foot
     localsend
     vesktop
+    supertuxkart
+    mcomix
   ];
 
   programs.nh = {

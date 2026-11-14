@@ -10,25 +10,24 @@
     nvf.url = "github:notashelf/nvf";
     nvf.inputs.nixpkgs.follows = "nixpkgs";
 
-    bootvine.url = "git+https://codeberg.org/wvhulle/bootvine";
-    bootvine.inputs.nixpkgs.follows = "nixpkgs";
-
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
   outputs =
     {
       nixpkgs,
       home-manager,
-      bootvine,
       nvf,
+      nix-flatpak,
       ...
     }:
     {
       nixosConfigurations.thinknix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          bootvine.nixosModules.default
           nvf.nixosModules.default
+          nix-flatpak.nixosModules.nix-flatpak
           ./configuration.nix
+          ./modules/flatpak.nix
         ];
       };
 

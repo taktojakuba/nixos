@@ -19,8 +19,8 @@ in
   boot.kernelPackages = pkgs.linuxPackagesFor kernel;
   boot.initrd.includeDefaultModules = false;
   boot.initrd.allowMissingModules = true;
-  boot.kernelParams = [
+  boot.kernelParams = [ 
     "nvme_core.default_ps_max_latency_us=0"
     "pcie_aspm=off"
-  ];
+   ];
 }

@@ -27,7 +27,7 @@
     nodejs
     pkg-config
     prettier
-    python3
+    (python3.withPackages (ps: [ ps.pillow ]))
     ruff
     rustc
     vim
